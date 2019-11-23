@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @author rock
  * @date 2019/5/25
  */
-@EnableFeignClients("com.nacos.discovery.consumer.feign.client")
+@EnableFeignClients("com.nacos.discovery.consumer.feignService")
 @EnableDiscoveryClient
 @SpringBootApplication
 public class NacosDiscoveryConsumerApplication {

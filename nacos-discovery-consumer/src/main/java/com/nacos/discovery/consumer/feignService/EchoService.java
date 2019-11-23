@@ -1,4 +1,4 @@
-package com.nacos.discovery.consumer.feign.client;
+package com.nacos.discovery.consumer.feignService;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.nacos.discovery.consumer.controller;
 
-import com.nacos.discovery.consumer.feign.client.EchoService;
+import com.nacos.discovery.consumer.feignService.EchoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -39,6 +39,6 @@ public class TestController {
      */
     @GetMapping(value = "/echo-feign/{str}")
     public String feign(@PathVariable String str) {
-        return echoService.echo(str);
+        return "feign service echo: " + echoService.echo(str);
     }
 }

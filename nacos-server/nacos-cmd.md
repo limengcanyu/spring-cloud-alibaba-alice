@@ -24,10 +24,9 @@ Linux/Unix/Mac
 启动命令(standalone代表着单机模式运行，非集群模式):
 
 cd /home/rock/nacos/bin
-
 sh startup.sh -m standalone
 
-cat /home/rock/nacos/logs/start.out
+tail -fn 300 /home/rock/nacos/logs/start.out
 
 如果您使用的是ubuntu系统，或者运行脚本报错提示[[符号找不到，可尝试如下运行：
 
@@ -67,7 +66,6 @@ curl -X GET "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos.cfg.dataId&g
 Linux/Unix/Mac
 
 cd /home/rock/nacos/bin
-
 sh shutdown.sh
 
 Windows
